@@ -1,3 +1,4 @@
+
 /* --------------------
         全体
 -------------------- */
@@ -18,7 +19,8 @@ html, body {
 body {
   margin: 0;
   padding: 30px;
-  color: #000000;
+  background: linear-gradient(to right, #e8f6ff, #f3ffeb);/*背景変えるやつ（グラデーション）*/
+  color: #000000; /*文字の色変えるやつ*/
 }
 
 /* --------------------
@@ -54,7 +56,7 @@ ul {
   list-style: none;
 }
 li:before {
-  content: "★";
+  content: "✬";
   color: var(--theme-color);
 }
 
@@ -81,4 +83,13 @@ th {
 th, td {
   border: solid 1px #000000; /*表の枠*/
   padding: 0.5rem;
+}
+
+.botan{/*ボタンの見た目*/
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:999px;
+}
+.botan:hover{/*ボタンの見た目　押してる時*/
+  background-color:#a5a5a5
 }

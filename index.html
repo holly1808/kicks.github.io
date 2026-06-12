@@ -9,23 +9,23 @@
   <body>
     <h1 id="heading" class="face">kicks memo</h1>
       <script>
-              const text = document.getElementById("heading");
+        const text = document.getElementById("heading");
       
-              const colors = [//タイトルカラー指定
-                  "#00FFFF",//シアン
-                  "#00ff00",//緑
-                  "#700070"//紫
-              ];
+        const colors = [//タイトルカラー指定
+          "#00FFFF",//シアン
+          "#00ff00",//緑
+          "#700070"//紫
+          ];
       
-              let index = 0;
+        let index = 0;
       
-              function changeColor() {
-                  text.style.color = colors[index];
-                  index = (index + 1) % colors.length;
-              }
+        function changeColor() {
+          text.style.color = colors[index];
+          index = (index + 1) % colors.length;
+          }
       
-              setInterval(changeColor, 10000); // 1秒ごとに変更
-          </script>
+        setInterval(changeColor, 10000); // 1秒ごとに変更
+      </script>
     
     
     <p>
@@ -33,7 +33,7 @@
       いろいろ記録。
     </p>
 
-    <h3>like</h3>
+    <h2>like</h2>
     <ul>
       <li>ゲーム</li>
       <li>収集</li>
@@ -41,7 +41,7 @@
       <li>車・レース観戦</li>
     </ul>
 
-    <h3>game</h3>
+    <h2>game</h2>
     <p>所有ハード・プラットフォーム</p>
       <table>
       <tr>
@@ -54,7 +54,7 @@
       </tr>
       <tr>
         <th>PC</th>
-        <td>steam、Epic Games Launcher</td>
+        <td>steme、Epic Games Launcher</td>
       </tr>
     </table>
     <p>好きな作品・シリーズなど（プレイ済み作品）</p>
@@ -78,15 +78,15 @@
       </tr>
       <tr>
         <th>インディーゲーム系</th>
-        <td>UNDERTALE、deltarune、Vampire survivors、Revolution Idle</td>
+        <td>UNDERTALE、deltarune、Vompire survivors、Rrvolution Idle</td>
       </tr>
     </table>
 
-    <h3>cooking</h3>
+    <h2>cooking</h2>
     <p>好きな料理・よく作る料理など</p>
     <ul>
       <li>カレー<span class="light">(カレールーの裏通りに作れば失敗せんよ)</span></li>
-      <li>牛丼<a href="https://cookpad.com/jp/recipes/19134559">自分が使うレシピはこちら（外部サイト）</a></li>
+      <li>牛丼<a href="https://cookpad.com/jp/recipes/19134559" target="_blank" rel="noopener noreferrer">自分が使うレシピはこちら（外部サイト）</a></li>
       <li>生姜焼き<span class="light">(玉ねぎ炒めて肉焼いて、砂糖と醤油一対一で入れて生姜はドバっと)</span></li>
       <li>クッキー<span class="light">(クッキークリッカーなら簡単なのに現実は...)</span></li>
 
@@ -94,11 +94,11 @@
 
     <style>
     .light {
-        color: rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, 0.2);/*文字の濃さ変えるやつ*/
     }
     </style>
 
-    <h3>music</h3>
+    <h2>music</h2>
     <p>集めたCDとアーティスト名</p>
     <table>
       <tr>
@@ -116,7 +116,7 @@
         <td>J Soul brothers</td>
       </tr>
       <tr>
-        <th>EXILE THE SECOND</th>
+        <th>EXILE THE SECOND </th>
         <td>THE Ⅱ AGE、THE BEST</td>
       </tr>
       <tr>
@@ -156,5 +156,89 @@
         <td>CRAZY HITS</td>
       </tr>
     </table>
+
+ <script>/*ボタン動作させるやつ*/
+ function toggleText(id) {
+     const text = document.getElementById(id);
+ 
+     if (text.style.display === "none" || text.style.display === "") {
+         text.style.display = "block";
+     } else {
+         text.style.display = "none";
+     }
+ }
+ </script>
+ 
+  <style>
+  .comment {
+     display: none;
+ }
+ </style>
+ 
+  
+  <h2>rankings</h2>
+  <p>色々なものを<span class="light">勝手に</span>ランキング付け</p>
+
+  <p>〇夜ごはんメイン料理ランキング
+  <button class="botan" onclick="toggleText('message3')">
+    表示する／非表示にする</button></p>
+    <div id="message3" class="comment">
+      <table>
+        <tr>
+          <th>順位・料理 </th>
+          <td>選考理由</td>
+        </tr>
+        <tr>
+          <th>1位<br>カレー</th>
+          <td>作りやすいのに美味しいのが素晴らしい。
+              保存して翌日以降でも食べれるのも高評価。
+          </td>
+        </tr>
+        <tr>
+          <th>2位<br>生姜焼き（豚肉炒め）</th>
+          <td>豚肉と玉ねぎを入れて炒めれば完成の手軽さ。
+              市販のたれで様々な味付けを実現できる。
+          </td>
+        </tr>
+        <tr>
+          <th>3位<br>牛丼</th>
+          <td>ある程度は手軽に作ることができる。
+              余ったらうどんなどに合わせて翌日食べるのもあり。
+          </td>
+        </tr>
+        <tr>
+          <th>4位<br>ハンバーグ</th>
+          <td>時間はかかるものの、肉の旨味を味わえるのが良い。
+              ソースの選択肢が豊富なのも魅力的。
+          </td>
+        </tr>
+        <tr>
+          <th>5位<br>とんかつ</th>
+          <td>必要な時間・手間は圧倒的だが、旨さも格別。
+              醤油との相性は抜群。</td>
+        </tr>
+      </table>
+    <button class="botan" onclick="toggleText('message3')">
+    ランキングを非表示</button>
+    </div>
+
+  <h2>others</h2>
+    <p>その他まとめ</p>
+  
+  <p>〇よく使うリンク集 
+  <button class="botan" onclick="toggleText('message1')">
+     表示する／非表示にする</button></p>
+    <div id="message1" class="comment">
+      <ul>
+        <li>原神wiki <a href="https://wikiwiki.jp/genshinwiki/" target="_blank" rel="noopener noreferrer">サイトはこちら</a></li>
+        <li>崩壊スターレイルwiki <a href="https://wikiwiki.jp/star-rail/" target="_blank" rel="noopener noreferrer">サイトはこちら</a></li>
+        <li>Revolution idle wiki <a href="https://wikiwiki.jp/revoidle/" target="_blank" rel="noopener noreferrer">サイトはこちら</a></li>
+      </ul>
+    <button class="botan" onclick="toggleText('message1')">
+    よく使うリンク集を非表示</button>
+    </div>
+  
+  <p>以上 by kicks</p>
+
   </body>
 </html>
