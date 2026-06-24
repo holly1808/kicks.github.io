@@ -64,26 +64,56 @@ li:before {
           表
 -------------------- */
 
-table {
+.table-like {/*表の見た目 like ここから*/
   border-spacing: 0;
   border-collapse: collapse;
   border: solid 1px #000000;
   min-width: 70%;
 }
-tr {
+.table-like tr {
   background-color: #ffffff;/*表の本文奇数段*/
 }
-tr:nth-child(2n) {
+.table-like tr:nth-child(2n) {
   background-color: #ffffff;/*表の本文偶数段*/
 }
-th {
+.table-like th {
   background: var(--theme-color);/*表の見出し*/
   color: #ffffff;
 }
-th, td {
+.table-like th, .table-like td {
   border: solid 1px #000000; /*表の枠*/
   padding: 0.5rem;
 }
+
+.table-like tr:hover {
+  background-color: #cccccc;/*表の行にマウスを乗せたとき*/
+}
+/*表の見た目 like ここまで*/
+
+.table-chara{/*キャラ加入履歴の表の見た目 ここから*/
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.table-chara th, .table-chara td {
+    border: 1px solid #777777;
+    padding: 5px;
+    text-align: center;
+}
+
+.table-chara th {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+}
+
+.table-chara tr  {
+    background-color: #f8fdff;
+}
+
+.table-chara tr:hover {
+    background-color: #cccccc;
+}/*キャラ加入履歴の表の見た目 ここまで*/
 
 .botan{/*ボタンの見た目*/
   background-color:#ffffff;
@@ -91,5 +121,14 @@ th, td {
   border-radius:999px;
 }
 .botan:hover{/*ボタンの見た目　押してる時*/
+  background-color:#a5a5a5
+}
+
+.botan-type1{/*ボタンの見た目*/
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:4px;
+}
+.botan-type1:hover{/*ボタンの見た目　押してる時*/
   background-color:#a5a5a5
 }

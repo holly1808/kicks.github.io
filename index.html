@@ -43,7 +43,7 @@
 
     <h2>game</h2>
     <p>所有ハード・プラットフォーム</p>
-      <table>
+      <table class="table-like">
       <tr>
         <th>任天堂</th>
         <td>wii、switch、switch2</td>
@@ -57,8 +57,9 @@
         <td>steam、Epic Games Launcher</td>
       </tr>
     </table>
+
     <p>好きな作品・シリーズなど（プレイ済み作品）</p>
-    <table>
+    <table class="table-like">
       <tr>
         <th>モンスターハンター</th>
         <td>XX、RISE</td>
@@ -100,7 +101,7 @@
 
     <h2>music</h2>
     <p>集めたCDとアーティスト名</p>
-    <table>
+    <table class="table-like">
       <tr>
         <th>J Soul brothers</th>
         <td>J soul brothers、D.T.B/chaos</td>
@@ -137,7 +138,7 @@
       </tr>
       <tr>
         <th>SOUL`d OUT</th>
-        <td>SOUL`d OUT、ALIVE、Single collection、ATTITUDE</td>
+        <td>SOUL`d OUT、ALIVE、Single collection、ATTITUDE、Decade</td>
       </tr>
       <tr>
         <th>米津玄師</th>
@@ -183,7 +184,7 @@
   <button class="botan" onclick="toggleText('message3')">
     表示する／非表示にする</button></p>
     <div id="message3" class="comment">
-      <table>
+      <table class="table-like">
         <tr>
           <th>順位・料理 </th>
           <td>選考理由</td>
@@ -218,14 +219,16 @@
               醤油との相性は抜群。</td>
         </tr>
       </table>
-    <button class="botan" onclick="toggleText('message3')">
+    <button class="botan-type1" onclick="toggleText('message3')">
     ランキングを非表示</button>
     </div>
+
+  <p>〇個人的買ってよかったCDランキング（実装予定）</p>
 
   <h2>others</h2>
     <p>その他まとめ</p>
   
-  <p>〇よく使うリンク集 
+  <p>〇よく使うリンク集
   <button class="botan" onclick="toggleText('message1')">
      表示する／非表示にする</button></p>
     <div id="message1" class="comment">
@@ -234,7 +237,7 @@
         <li>崩壊スターレイルwiki <a href="https://wikiwiki.jp/star-rail/" target="_blank" rel="noopener noreferrer">サイトはこちら</a></li>
         <li>Revolution idle wiki <a href="https://wikiwiki.jp/revoidle/" target="_blank" rel="noopener noreferrer">サイトはこちら</a></li>
       </ul>
-    <button class="botan" onclick="toggleText('message1')">
+    <button class="botan-type1" onclick="toggleText('message1')">
     よく使うリンク集を非表示</button>
     </div>
   
@@ -265,7 +268,7 @@
         <li>江の島<a href="https://maps.app.goo.gl/H1ziBprKw7Qv42eF6" target="_blank" rel="noopener noreferrer">Googleマップ</a></li>
         <li>日光<a href="https://maps.app.goo.gl/XAMBmcKx51z3Eveq8" target="_blank" rel="noopener noreferrer">Googleマップ</a></li>
       </ul>
- <button class="botan" onclick="toggleText('message2')">
+ <button class="botan-type1" onclick="toggleText('message2')">
     好きな場所・行きたい場所を非表示</button>
     </div>
 
@@ -275,7 +278,7 @@
     <div id="message4" class="comment">
       <p>項目</p>
 
-      <p>・キャラガチャ履歴(ver LunaⅠ~)
+      <p>・キャラガチャ履歴（ver LunaⅠ~）
       <button class="botan" onclick="toggleText('message4-1')">
         表示する／非表示にする</button></p>
         <div id="message4-1" class="comment">
@@ -296,8 +299,12 @@
             <li>8 ドゥリン</li>
             <li>73 ニコ</li>
             <li>6 七七</li>
+            <li>50 ローエン</li>
           </ul>
-      <button class="botan" onclick="toggleText('message4-1')">
+          <p>・計902連</p>
+          <p>・星5出現平均53連</p>
+          <p>・限定星5出現平均75連</p>
+      <button class="botan-type1" onclick="toggleText('message4-1')">
         キャラガチャ履歴を非表示</button>
         </div>
 
@@ -314,15 +321,412 @@
             <li>66 ウェンティ餅</li>
             <li>31 ファルカ餅</li>
           </ul>
-      <button class="botan" onclick="toggleText('message4-2')">
+          <p>・計416連</p>
+          <p>・星5出現平均59連</p>
+      <button class="botan-type1" onclick="toggleText('message4-2')">
         武器ガチャ履歴を非表示</button>
         </div><br>
 
-  <button class="botan" onclick="toggleText('message4')">
+  <button class="botan-type1" onclick="toggleText('message4')">
     ガチャ履歴を非表示</button>
     </div>
 
+  <p>〇原神・キャラ加入履歴
+  <button class="botan" onclick="toggleText('message5')">
+     表示する／非表示にする</button></p>
+    <div id="message5" class="comment">
+      <p>項目</p>
 
+  <p>・2022年
+    <button class="botan" onclick="toggleText('message5-2022')">
+    表示する／非表示にする</button></p>
+    <div id="message5-2022" class="comment">
+      <table class="table-chara">
+        <tr>
+          <th>キャラ名</th>
+          <th>加入した月・日</th>
+        </tr>
+        <tr>
+          <td>アンバー</td>
+          <td>3月2日</td>
+        </tr>
+        <tr>
+          <td>ガイア</td>
+          <td>3月3日</td>
+        </tr>
+        <tr>
+          <td>リサ</td>
+          <td>3月3日</td>
+        </tr>
+        <tr>
+          <td>レザー</td>
+          <td>3月3日</td>
+        </tr>
+        <tr>
+          <td>ノエル</td>
+          <td>3月3日</td>
+        </tr>
+        <tr>
+          <td>行秋</td>
+          <td>3月4日</td>
+        </tr>
+        <tr>
+          <td>バーバラ</td>
+          <td>3月9日</td>
+        </tr>
+        <tr>
+          <td>ディオナ</td>
+          <td>3月15日</td>
+        </tr>
+        <tr>
+          <td>九条裟羅</td>
+          <td>3月15日</td>
+        </tr>
+        <tr>
+          <td>ベネット</td>
+          <td>3月18日</td>
+        </tr>
+        <tr>
+          <td>辛炎</td>
+          <td>3月23日</td>
+        </tr>
+        <tr>
+          <td>香菱</td>
+          <td>3月30日</td>
+        </tr>
+        <tr>
+          <td>雲菫</td>
+          <td>4月3日</td>
+        </tr>
+        <tr>
+          <td>モナ</td>
+          <td>4月18日</td>
+        </tr>
+        <tr>
+          <td>ロサリア</td>
+          <td>5月21日</td>
+        </tr>
+        <tr>
+          <td>ゴロー</td>
+          <td>6月29日</td>
+        </tr>
+        <tr>
+          <td>荒瀧一斗</td>
+          <td>7月3日</td>
+        </tr>
+        <tr>
+          <td>久岐忍</td>
+          <td>7月9日</td>
+        </tr>
+        <tr>
+          <td>凝光</td>
+          <td>7月14日</td>
+        </tr>
+        <tr>
+          <td>トーマ</td>
+          <td>7月15日</td>
+        </tr>
+        <tr>
+          <td>鹿野院平蔵</td>
+          <td>7月15日</td>
+        </tr>
+        <tr>
+          <td>フィッシュル</td>
+          <td>7月19日</td>
+        </tr>
+        <tr>
+          <td>コレイ</td>
+          <td>8月24日</td>
+        </tr>
+        <tr>
+          <td>ジン</td>
+          <td>8月24日</td>
+        </tr>
+        <tr>
+          <td>刻晴</td>
+          <td>10月3日</td>
+        </tr>
+        <tr>
+          <td>煙緋</td>
+          <td>10月29日</td>
+        </tr>
+        <tr>
+          <td>レイラ</td>
+          <td>11月19日</td>
+        </tr>
+        <tr>
+          <td>タルタリア</td>
+          <td>11月19日</td>
+        </tr>
+        <tr>
+          <td>ファルザン</td>
+          <td>12月8日</td>
+        </tr>
+        <tr>
+          <td>放浪者</td>
+          <td>12月10日</td>
+        </tr>
+        <tr>
+          <td>ドリー</td>
+          <td>12月23日</td>
+        </tr>
+      </table>
+    <button class="botan-type1" onclick="toggleText('message5-2022')">
+    2022年のキャラ加入履歴を非表示</button>
+    </div>
+
+  <p>・2023年
+    <button class="botan" onclick="toggleText('message5-2023')">
+    表示する／非表示にする</button></p>
+    <div id="message5-2023" class="comment">
+      <table class="table-chara">
+        <tr>
+          <th>キャラ名</th>
+          <th>加入した月・日</th>
+        </tr>
+        <tr>
+          <td>ヨォーヨ</td>
+          <td>1月22日</td>
+        </tr>
+        <tr>
+          <td>アルハイゼン</td>
+          <td>1月26日</td>
+        </tr>
+        <tr>
+          <td>ナヒーダ</td>
+          <td>4月13日</td>
+        </tr>
+        <tr>
+          <td>ミカ</td>
+          <td>4月15日</td>
+        </tr>
+        <tr>
+          <td>スクロース</td>
+          <td>4月17日</td>
+        </tr>
+        <tr>
+          <td>七七</td>
+          <td>6月13日</td>
+        </tr>
+        <tr>
+          <td>楓原万葉</td>
+          <td>6月13日</td>
+        </tr>
+        <tr>
+          <td>綺良々</td>
+          <td>8月8日</td>
+        </tr>
+        <tr>
+          <td>リネット</td>
+          <td>8月16日</td>
+        </tr>
+        <tr>
+          <td>フレミネ</td>
+          <td>9月5日</td>
+        </tr>
+        <tr>
+          <td>早柚</td>
+          <td>9月5日</td>
+        </tr>
+        <tr>
+          <td>鐘離</td>
+          <td>9月5日</td>
+        </tr>
+        <tr>
+          <td>ヌヴィレット</td>
+          <td>9月27日</td>
+        </tr>
+        <tr>
+          <td>重雲</td>
+          <td>10月17日</td>
+        </tr>
+        <tr>
+          <td>リオセスリ</td>
+          <td>10月17日</td>
+        </tr>
+        <tr>
+          <td>北斗</td>
+          <td>11月8日</td>
+        </tr>
+        <tr>
+          <td>シャルロット</td>
+          <td>11月8日</td>
+        </tr>
+        <tr>
+          <td>ディルック</td>
+          <td>11月8日</td>
+        </tr>
+        <tr>
+          <td>神里綾人</td>
+          <td>11月28日</td>
+        </tr>
+      </table>
+    <button class="botan-type1" onclick="toggleText('message5-2023')">
+    2023年のキャラ加入履歴を非表示</button>
+    </div>
+
+  <p>・2024年
+    <button class="botan" onclick="toggleText('message5-2024')">
+    表示する／非表示にする</button></p>
+    <div id="message5-2024" class="comment">
+      <table class="table-chara">
+        <tr>
+          <th>キャラ名</th>
+          <th>加入した月・日</th>
+        </tr>
+        <tr>
+          <td>シュヴルーズ</td>
+          <td>1月11日</td>
+        </tr>
+        <tr>
+          <td>雷電将軍</td>
+          <td>1月11日</td>
+        </tr>
+        <tr>
+          <td>嘉明</td>
+          <td>2月12日</td>
+        </tr>
+        <tr>
+          <td>アルレッキーノ</td>
+          <td>4月24日</td>
+        </tr>
+        <tr>
+          <td>白朮</td>
+          <td>5月14日</td>
+        </tr>
+        <tr>
+          <td>セトス</td>
+          <td>6月14日</td>
+        </tr>
+        <tr>
+          <td>夜蘭</td>
+          <td>8月8日</td>
+        </tr>
+        <tr>
+          <td>カチーナ</td>
+          <td>8月28日</td>
+        </tr>
+        <tr>
+          <td>ティナリ</td>
+          <td>8月28日</td>
+        </tr>
+        <tr>
+          <td>キャンディス</td>
+          <td>10月27日</td>
+        </tr>
+        <tr>
+          <td>カーヴェ</td>
+          <td>11月11日</td>
+        </tr>
+      </table>
+    <button class="botan-type1" onclick="toggleText('message5-2024')">
+    2024年のキャラ加入履歴を非表示</button>
+    </div>
+
+  <p>・2025年
+    <button class="botan" onclick="toggleText('message5-2025')">
+    表示する／非表示にする</button></p>
+    <div id="message5-2025" class="comment">
+      <table class="table-chara">
+        <tr>
+          <th>キャラ名</th>
+          <th>加入した月・日</th>
+        </tr>
+        <tr>
+          <td>藍硯</td>
+          <td>2月1日</td>
+        </tr>
+        <tr>
+          <td>ディシア</td>
+          <td>3月15日</td>
+        </tr>
+        <tr>
+          <td>オロルン</td>
+          <td>4月1日</td>
+        </tr>
+        <tr>
+          <td>シロネン</td>
+          <td>4月27日</td>
+        </tr>
+        <tr>
+          <td>ダリア</td>
+          <td>6月19日</td>
+        </tr>
+        <tr>
+          <td>スカーク</td>
+          <td>6月19日</td>
+        </tr>
+        <tr>
+          <td>イアンサ</td>
+          <td>7月1日</td>
+        </tr>
+        <tr>
+          <td>アイノ</td>
+          <td>9月10日</td>
+        </tr>
+        <tr>
+          <td>フリンズ</td>
+          <td>9月30日</td>
+        </tr>
+        <tr>
+          <td>ヤフォダ</td>
+          <td>12月3日</td>
+        </tr>
+        <tr>
+          <td>ドゥリン</td>
+          <td>12月3日</td>
+        </tr>
+        <tr>
+          <td>ウェンティ</td>
+          <td>12月3日</td>
+        </tr>
+      </table>
+    <button class="botan-type1" onclick="toggleText('message5-2025')">
+    2025年のキャラ加入履歴を非表示</button>
+    </div>
+
+  <p>・2026年
+    <button class="botan" onclick="toggleText('message5-2026')">
+    表示する／非表示にする</button></p>
+    <div id="message5-2026" class="comment">
+      <table class="table-chara">
+        <tr>
+          <th>キャラ名</th>
+          <th>加入した月・日</th>
+        </tr>
+         <tr>
+          <td>イファ</td>
+          <td>1月14日</td>
+        </tr>
+        <tr>
+          <td>エスコフイエ</td>
+          <td>3月28日</td>
+        </tr>
+        <tr>
+          <td>ファルカ</td>
+          <td>2月25日</td>
+        </tr>
+        <tr>
+          <td>プルーネ</td>
+          <td>5月20日</td>
+        </tr>
+        <tr>
+          <td>ニコ</td>
+          <td>5月20日</td>
+        </tr>
+        <tr>
+          <td>ローエン</td>
+          <td>6月20日</td>
+        </tr>
+      </table>
+    <button class="botan-type1" onclick="toggleText('message5-2026')">
+    2026年のキャラ加入履歴を非表示</button>
+    </div><br>
+
+    <button class="botan-type1" onclick="toggleText('message5')">
+      キャラ加入履歴を非表示</button>
+    </div>
+  
   <p>以上 by kicks</p>
 
   </body>
